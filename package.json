@@ -1,0 +1,24 @@
+{
+  "name": "sampleproject",
+  "version": "1.0.0",
+  "description": "A js file that plays a beep with hopes to deploy a musical scale on kubernetes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsmailach/KubernetesScale.git"
+  },
+  "keywords": [
+    "Kubernetes",
+    "Istio"
+  ],
+  "author": "Rachel Mailach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsmailach/KubernetesScale/issues"
+  },
+  "homepage": "https://github.com/rsmailach/KubernetesScale#readme"
+}
