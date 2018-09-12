@@ -7,11 +7,12 @@
 // D  293.66Hz
 // E  329.63Hz
 // F# 369.99Hz
-
+/*
 // var scaleFrequencyArray = [196.00, 220.00, 246.94, 261.63, 293.66, 329.63, 369.99];
+var AudioContext = window.AudioContext || window.webkitAudioContext;
 
 // Get url parameters 
-var urlParams = new URLSearchParams(window.location.search);
+//var urlParams = new URLSearchParams(window.location.search);
 var noteFrequency = 196;// urlParams.get('noteFrequency');
 console.log(noteFrequency);
 
@@ -30,6 +31,14 @@ var context = new AudioContext();
 		oscillator.stop();
 	}, 500); 
 //}
+*/
 
+  console.log('Hello, world');
+const http = require('http');
 
+http.createServer(function(request, response) {
+  response.writeHead(200, { 'Content-type':'text/plain' });
+  response.write('Hello, wold');
+  response.end();
+}).listen(8080);
 

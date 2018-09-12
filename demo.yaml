@@ -1,0 +1,42 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-note-service
+  labels:
+    app: first-note
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: first-note
+    
+---
+ 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-note
+  labels:
+    app: first-note
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: first-note
+  template:
+    metadata:
+      labels:
+        app: first-note
+    spec:
+      containers:
+      - name: first-note
+        image: gcr.io/kubernetes-and-istio/myproject:latest
+        ports:
+        - containerPort: 80
+
+
+
+
+

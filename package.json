@@ -4,8 +4,7 @@
   "description": "A js file that plays a beep with hopes to deploy a musical scale on kubernetes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rsmailach/KubernetesScale/issues"
   },
-  "homepage": "https://github.com/rsmailach/KubernetesScale#readme"
+  "homepage": "https://github.com/rsmailach/KubernetesScale#readme",
+  "devDependencies": {
+    "npm-start-command": "^0.2.0"
+  }
 }
